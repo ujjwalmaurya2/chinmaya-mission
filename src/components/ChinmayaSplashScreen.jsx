@@ -71,13 +71,13 @@ export default function ChinmayaSplashScreen({ onComplete }) {
       {/* Main Brand Content Center */}
       <div className="relative z-10 text-center max-w-lg w-full flex flex-col items-center">
         
-        {/* Brand Symbol / Om Seva Mark */}
+        {/* Brand Symbol / Official Chinmaya Mission Emblem */}
         <div 
-          className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-[#F7E6D7] to-[#F5EBDD] text-[#C96F32] flex items-center justify-center mb-6 shadow-md border border-[rgba(201,111,50,0.25)] transition-all duration-700 ${
+          className={`w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-white p-2.5 flex items-center justify-center mb-6 shadow-xl border border-[rgba(201,111,50,0.3)] transition-all duration-700 ${
             stage >= 1 ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-90'
           }`}
         >
-          <span className="font-serif font-bold text-2xl sm:text-3xl">🕉️</span>
+          <img src="/images/chinmaya_logo.png" alt="Chinmaya Mission Logo" className="w-full h-full object-contain" />
         </div>
 
         {/* CHINMAYA Heading */}

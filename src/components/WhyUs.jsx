@@ -44,8 +44,8 @@ export default function WhyUs() {
             </p>
 
             <div className="p-6 rounded-2xl bg-white border border-[#F5EBDD] shadow-sm flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#F7E6D7] text-[#C96F32] flex items-center justify-center shrink-0">
-                🕉️
+              <div className="w-12 h-12 rounded-full bg-white p-1 border border-[#C96F32]/30 flex items-center justify-center shrink-0 shadow-sm overflow-hidden">
+                <img src="/images/chinmaya_logo.png" alt="Chinmaya Mission Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h4 className="font-serif font-bold text-base text-[#2B211B]">Inspired by Chinmaya Seva</h4>

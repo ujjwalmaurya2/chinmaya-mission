@@ -95,8 +95,8 @@ END:VCALENDAR`;
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-[#F5EBDD] mb-6">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#F7E6D7] text-[#C96F32] flex items-center justify-center font-bold font-serif">
-              🕉️
+            <div className="w-11 h-11 rounded-full bg-white p-1 flex items-center justify-center shadow-sm border border-[#C96F32]/30 overflow-hidden shrink-0">
+              <img src="/images/chinmaya_logo.png" alt="Chinmaya Mission Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <span className="text-[10px] font-bold uppercase tracking-wider text-[#A95724]">OPD Consultation Scheduler</span>

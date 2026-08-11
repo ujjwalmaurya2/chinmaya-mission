@@ -44,8 +44,8 @@ export default function Navbar({ onOpenAppointment, activeSection, setActiveSect
         
         {/* Brand Logo */}
         <a href="#hero" onClick={(e) => { e.preventDefault(); handleNavClick('#hero'); }} className="flex items-center gap-3 text-left group">
-          <div className="w-10 h-10 rounded-full bg-[#C96F32] flex items-center justify-center text-white font-serif font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
-            🕉️
+          <div className="w-11 h-11 rounded-full bg-white p-1.5 flex items-center justify-center shadow-md border border-[#C96F32]/30 group-hover:scale-105 transition-transform overflow-hidden shrink-0">
+            <img src="/images/chinmaya_logo.png" alt="Chinmaya Mission Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <div className={`font-serif font-bold text-lg leading-tight tracking-tight ${scrolled ? 'text-[#2B211B]' : 'text-white'}`}>

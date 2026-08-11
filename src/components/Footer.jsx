@@ -16,8 +16,8 @@ export default function Footer({ onOpenAppointment }) {
           {/* Col 1 & 2: Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#C96F32] flex items-center justify-center text-white font-serif font-bold text-xl shadow-md">
-                🕉️
+              <div className="w-12 h-12 rounded-full bg-white p-1.5 flex items-center justify-center shadow-md border border-white/20 overflow-hidden shrink-0">
+                <img src="/images/chinmaya_logo.png" alt="Chinmaya Mission Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="font-serif font-bold text-xl text-white">CHINMAYA CHIKITSALAYA</h3>
