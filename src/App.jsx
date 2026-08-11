@@ -32,7 +32,11 @@ import ToastNotification from './components/ToastNotification';
 import FloatingDonateButton from './components/donation/FloatingDonateButton';
 import DonationDrawer from './components/donation/DonationDrawer';
 
+// Brand Intro / Splash Screen Component
+import ChinmayaSplashScreen from './components/ChinmayaSplashScreen';
+
 export default function App() {
+  const [showSplash, setShowSplash] = useState(true);
   const [appointmentModalOpen, setAppointmentModalOpen] = useState(false);
   const [donationDrawerOpen, setDonationDrawerOpen] = useState(false);
   const [initialDoctor, setInitialDoctor] = useState(null);
@@ -62,6 +66,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#FFF9F1] text-[#2B211B] flex flex-col font-sans selection:bg-[#C96F32] selection:text-white pb-16 md:pb-0 relative">
       
+      {/* Brand Intro / Splash Screen */}
+      {showSplash && (
+        <ChinmayaSplashScreen onComplete={() => setShowSplash(false)} />
+      )}
+
       {/* Sticky Global Navigation */}
       <Navbar 
         onOpenAppointment={() => handleOpenAppointment()} 
