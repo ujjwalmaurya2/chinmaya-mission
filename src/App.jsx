@@ -28,8 +28,13 @@ import MobileBottomBar from './components/MobileBottomBar';
 import AppointmentModal from './components/AppointmentModal';
 import ToastNotification from './components/ToastNotification';
 
+// Premium Floating Donation Feature Components
+import FloatingDonateButton from './components/donation/FloatingDonateButton';
+import DonationDrawer from './components/donation/DonationDrawer';
+
 export default function App() {
   const [appointmentModalOpen, setAppointmentModalOpen] = useState(false);
+  const [donationDrawerOpen, setDonationDrawerOpen] = useState(false);
   const [initialDoctor, setInitialDoctor] = useState(null);
   const [initialService, setInitialService] = useState(null);
   const [toast, setToast] = useState(null);
@@ -55,7 +60,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FFF9F1] text-[#2B211B] flex flex-col font-sans selection:bg-[#C96F32] selection:text-white pb-16 md:pb-0">
+    <div className="min-h-screen bg-[#FFF9F1] text-[#2B211B] flex flex-col font-sans selection:bg-[#C96F32] selection:text-white pb-16 md:pb-0 relative">
       
       {/* Sticky Global Navigation */}
       <Navbar 
@@ -153,6 +158,16 @@ export default function App() {
 
       {/* Mobile Bottom Action Bar */}
       <MobileBottomBar onOpenAppointment={() => handleOpenAppointment()} />
+
+      {/* Persistent Floating Donate Button */}
+      <FloatingDonateButton onClick={() => setDonationDrawerOpen(true)} />
+
+      {/* Donation Drawer / Mobile Bottom Sheet */}
+      <DonationDrawer 
+        isOpen={donationDrawerOpen} 
+        onClose={() => setDonationDrawerOpen(false)} 
+        onExploreImpact={() => scrollToSection('#impact')}
+      />
 
       {/* Appointment Modal */}
       <AppointmentModal 
