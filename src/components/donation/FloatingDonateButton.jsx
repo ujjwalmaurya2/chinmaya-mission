@@ -5,7 +5,7 @@ export default function FloatingDonateButton({ onClick }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="fixed z-40 right-4 bottom-[90px] md:bottom-auto md:right-6 md:top-[55%] md:-translate-y-1/2 animate-fade-up">
+    <div className="fixed z-40 right-4 bottom-24 md:right-8 md:bottom-8 animate-fade-up">
       {/* Subtle periodic pulse ring */}
       <span className="absolute -inset-1 rounded-full bg-[#C96F32]/30 animate-ping pointer-events-none opacity-40 duration-1000" />
 
